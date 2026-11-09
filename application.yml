@@ -30,12 +30,8 @@ plugins:
     allowDirectVideoIds: true
     allowDirectPlaylistIds: true
     clients:
+      - ANDROID_VR
       - MUSIC
-      - WEB
-    oauth:
-      # Setting "enabled: true" is the bare minimum to get OAuth working.
-      enabled: true
-      # Do NOT uncomment refreshToken or skipInitialization yet.
-      # Leave them commented out for now.
-      # refreshToken: "your_refresh_token_here"
-      # skipInitialization: true
+      - WEBEMBEDDED
+      - TVHTML5_SIMPLY
+      - IOS
