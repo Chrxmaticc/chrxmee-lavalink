@@ -1,9 +1,8 @@
 server:
-  port: 443
+  port: 2333
   address: 0.0.0.0
 
 plugins:
-  # youtube plugin.
   - dependency: "dev.lavalink.youtube:youtube-plugin:1.11.4"
     repository: "https://maven.lavalink.dev/releases"
 
@@ -14,7 +13,6 @@ lavalink:
   server:
     password: "chrxmaticc2026"
     sources:
-      # i disabled the built-in yt source because the plugin below replaces it
       youtube: false
       bandcamp: true
       soundcloud: true
@@ -34,7 +32,6 @@ plugins:
     allowSearch: true
     allowDirectVideoIds: true
     allowDirectPlaylistIds: true
-    # fuck whoever tryna stop me, these r bypasses mate.
     clients:
       - ANDROID_VR
       - MUSIC
