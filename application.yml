@@ -3,23 +3,39 @@ server:
   address: 0.0.0.0
 
 plugins:
+  # youtube plugin.
   - dependency: "dev.lavalink.youtube:youtube-plugin:1.11.4"
-    repository: "https://maven.lavalink.dev/releases"
-  - dependency: "com.github.topi314.lavasrc:lavasrc-plugin:4.2.0"
     repository: "https://maven.lavalink.dev/releases"
 
 lavalink:
+  plugins:
+    - dependency: "dev.lavalink.youtube:youtube-plugin:1.11.4"
+      repository: "https://maven.lavalink.dev/releases"
   server:
     password: "chrxmaticc2026"
     sources:
-      youtube: true
+      # i disabled the built-in yt source because the plugin below replaces it
+      youtube: false
+      bandcamp: true
       soundcloud: true
+      twitch: true
+      vimeo: true
       http: true
+    filters:
+      volume: true
+      equalizer: true
     youtubeSearchEnabled: true
     soundcloudSearchEnabled: true
     gc-warnings: true
 
-logging:
-  level:
-    root: INFO
-    lavalink: INFO
+plugins:
+  youtube:
+    enabled: true
+    allowSearch: true
+    allowDirectVideoIds: true
+    allowDirectPlaylistIds: true
+    # fuck whoever tryna stop me, these r bypasses mate.
+    clients:
+      - ANDROID_VR
+      - MUSIC
+      - WEBEMBEDDED
