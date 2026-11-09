@@ -34,3 +34,4 @@ plugins:
       - MUSIC
       - WEBEMBEDDED
       - TVHTML5_SIMPLY
+      - IOS
