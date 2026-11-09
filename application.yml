@@ -2,10 +2,6 @@ server:
   port: 2333
   address: 0.0.0.0
 
-plugins:
-  - dependency: "dev.lavalink.youtube:youtube-plugin:1.11.4"
-    repository: "https://maven.lavalink.dev/releases"
-
 lavalink:
   plugins:
     - dependency: "dev.lavalink.youtube:youtube-plugin:1.11.4"
@@ -19,6 +15,7 @@ lavalink:
       twitch: true
       vimeo: true
       http: true
+      local: false
     filters:
       volume: true
       equalizer: true
