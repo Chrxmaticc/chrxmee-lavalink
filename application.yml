@@ -13,7 +13,7 @@ lavalink:
   server:
     password: "chrxmaticc2026"
     sources:
-      youtube: false # 👈 YOUTUBE IS DEAD TO US
+      youtube: false 
       bandcamp: true
       soundcloud: true
       twitch: true
@@ -24,12 +24,11 @@ lavalink:
       equalizer: true
     gc-warnings: true
 
-plugins:
-  lavasrc:
-    sources:
-      spotify: false
-      applemusic: false
-      deezer: true
-      yandexmusic: false
-      flowerytts: false
-      youtube: false
+lavasrc:
+  sources:
+    spotify: false
+    applemusic: false
+    deezer: true
+    yandexmusic: false
+    flowerytts: false
+    youtube: false
